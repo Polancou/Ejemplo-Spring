@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+    </h:head>
+    <h:body>
+        <h:outputText value="Tarea Simple Spring"></h:outputText>
+
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Nombre"/>
+                <h:inputText value="#{userBean.name}" />
+                <h:outputLabel value="Contraseña"/>
+                <h:inputSecret value="#{userBean.surname}"/>
+                <h:commandButton value="Guardar datos" action="#{userBean.persistUser()}" />
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
